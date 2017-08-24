@@ -1,0 +1,9 @@
+<div class="searchBox">
+	<form id="box">
+		<input type="search" name="search" placeholder="Employee Num" [(ngModel)]="search">
+		<input type="submit" (click)="getDetails()" hidden>
+	</form>
+</div>
+<div class="searchResults">
+	<search-results [empDetails]="response"></search-results>
+</div>
